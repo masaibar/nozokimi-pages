@@ -11,3 +11,18 @@ img.screenshot {
   margin-left: auto;
   margin-right: auto;
 }
+
+h3{
+  font-size: large;
+  color:rgba(0, 0, 0, 1);
+}
+
+p {
+  font-size: small;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+ul {
+  font-size: small;
+  color: rgba(0, 0, 0, 0.7);
+}
