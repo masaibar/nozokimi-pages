@@ -1,3 +1,6 @@
 div.content {
-  padding: 8px;
+  padding-left: 8dp;
+  padding-right: 8dp;
+  padding-top: 4dp;
+  padding-bottom: 4dp;
 }
