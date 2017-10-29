@@ -22,7 +22,18 @@ p {
   color: rgba(0, 0, 0, 0.7);
 }
 
-ul {
+ul.list {
   font-size: small;
   color: rgba(0, 0, 0, 0.7);
 }
+
+li.toc {
+  font-size: medium;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+a:link {color:#0000ff; text-decoration:none}
+a:visited {color:#0000ff; text-decoration:none}
+a:hover {color:#0000ff; text-decoration:none}
+a:active {color:#0000ff; text-decoration:none}
