@@ -2,4 +2,4 @@
 
 https://masaibar.github.io/nozokimi-pages/help.html
 
-https://masaibar.github.io/nozokimi-pages/about_premium.htm
+https://masaibar.github.io/nozokimi-pages/about_premium.html
