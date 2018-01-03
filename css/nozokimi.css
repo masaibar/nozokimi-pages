@@ -11,11 +11,13 @@ img.screenshot {
   margin-left: auto;
   margin-right: auto;
 }
-h2{
-  font-size: medium;
-  color:rgba(0, 0, 0, 1);
 
 h3{
+  font-size: medium;
+  color:rgba(0, 0, 0, 1);
+}
+
+h4{
   font-size: medium;
   color:rgba(0, 0, 0, 1);
 }
