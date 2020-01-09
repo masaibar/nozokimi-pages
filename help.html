@@ -1,116 +1,124 @@
 <html>
 <head>
-  <link rel="stylesheet" href="css/nozokimi.css" type="text/css">
-  <title>
-    のぞきみ ヘルプ
-  </title>
+    <link href="css/nozokimi.css" rel="stylesheet" type="text/css">
+    <title>
+        のぞきみ ヘルプ
+    </title>
 </head>
 <body>
-  <div class="content">
+<div class="content">
     <h3>目次</h3>
     <ul>
-      <li class="toc"><a href="#can_not_get">メッセージアプリの内容が取得できない</a></li>
-      <li class="toc"><a href="#process_died_huawei_device">Huawei端末でうまく動かない</a></li>
-      <li class="toc"><a href="#delete_all_msg">メッセージを一括で削除したい</a></li>
-      <li class="toc"><a href="#delete_all_talk">トークを一括で既読・削除したい</a></li>
-      <li class="toc"><a href="#line_msg">LINEのメッセージが取得できない</a></li>
-      <li class="toc"><a href="#orca_msg">Facebook Messengerのメッセージが取得できない</a></li>
-      <li class="toc"><a href="#twitter_msg">Twitterのメッセージが取得できない</a></li>
-      <li class="toc"><a href="#can_not_do">このアプリでできないこと</a></li>
-      <li class="toc"><a href="#contact">上記内容で解決しない場合</a></li>
+        <li class="toc"><a href="#can_not_do">このアプリでできないこと</a></li>
+        <li class="toc"><a href="#can_not_get">メッセージアプリの内容が取得できない</a></li>
+        <li class="toc"><a href="#process_died_huawei_device">Huawei端末でうまく動かない</a></li>
+        <li class="toc"><a href="#delete_all_msg">メッセージを一括で削除したい</a></li>
+        <li class="toc"><a href="#delete_all_talk">トークを一括で既読・削除したい</a></li>
+        <li class="toc"><a href="#line_msg">LINEのメッセージが取得できない</a></li>
+        <li class="toc"><a href="#orca_msg">Facebook Messengerのメッセージが取得できない</a></li>
+        <li class="toc"><a href="#twitter_msg">Twitterのメッセージが取得できない</a></li>
+        <li class="toc"><a href="#contact">上記内容で解決しない場合</a></li>
     </ul>
-  </div>
+</div>
 
-  <hr>
+<hr>
 
-  <div class="content">
+<div class="content">
+    <h3 id="can_not_do">このアプリでできないこと</h3>
+    <p>
+        本アプリはメッセージアプリに対し直接アクセスすることができず、通知から内容を取得して動作しております。そのため、通知からの情報では取得できない下記の項目については対応できかねます。</p>
+    <ul class="list">
+        <li>インストール後設定するまでのメッセージの取得</li>
+        <li>通知が表示されなかった場合のメッセージの表示</li>
+        <li>通知の上で途切れてしまったメッセージの表示</li>
+        <li>自分の送信したメッセージの内容の表示</li>
+    </ul>
+    <p>申し訳ありませんがご了承ください。</p>
+</div>
+
+<hr>
+
+<div class="content">
     <h3 id="can_not_get">メッセージアプリの内容が取得できない</h3>
-    <p>通知へのアクセスがOFFになっている場合は、<a href="nozokimi://settings/notification_listener">こちら</a>から本アプリの通知へのアクセスをONにしてください。</p>
+    <p>通知へのアクセスがOFFになっている場合は、<a href="nozokimi://settings/notification_listener">こちら</a>から本アプリの通知へのアクセスをONにしてください。
+    </p>
     <p>ONになっているにも関わらず、取得できない場合はAndroid端末側のバグの可能性があります。下記の手順を順にお試しください。</p>
     <ul class="list">
-      <li>Android端末本体の再起動</li>
-      <li>通知へのアクセスをON → OFF → ONに</li>
-      <li>本アプリのアンインストールと再インストール</li>
+        <li>Android端末本体の再起動</li>
+        <li>通知へのアクセスをON → OFF → ONに</li>
+        <li>本アプリのアンインストールと再インストール</li>
     </ul>
-    
+
     <p>上記の設定と個別のアプリの設定を行なってもメッセージを受信できない場合、通知読み取りのためのプロセスが停止されている可能性があります。</p>
-    <p>メーカーや端末によって環境が異なるため一概には言えませんが、メモリ管理やセキュリティ系(CleanMaster等)のアプリを入れている場合に強制的に停止されてしまう場合があります。</p>
+    <p>
+        メーカーや端末によって環境が異なるため一概には言えませんが、メモリ管理やセキュリティ系(CleanMaster等)のアプリを入れている場合に強制的に停止されてしまう場合があります。</p>
     <p>もしそのようなアプリが入っている場合には、ホワイトリスト設定等を見直しの上端末を再起動してみてください。</p>
     <p>また最近人気のあるHuawei社製の端末をお使いの場合はひとつ下の項目もご確認下さい。</p>
-  </div>
+</div>
 
-  <hr>
-  <div class="content">
+<hr>
+<div class="content">
     <h3 id="process_died_huawei_device">Huawei端末でうまく動かない</h3>
     <p>Huawei端末にはメーカー側が施した「画面をオフにするとバックグラウンドで動いているアプリを問答無用で停止する」という素敵な独自機能があります。
     <p>のぞきみも例に漏れず停止されてしまうアプリであり、<b>「画面はオフにしてものぞきみは閉じるな！」</b>と明示的に設定をしてやる必要があります。</p>
-    <p><a href="nozokimi://settings/huawei_system_manager">こちら</a>の設定から画面がオフになっても実行を許可するアプリにのぞきみを追加し、端末を再起動してみて下さい。</p>
-    <p>上記のリンクが開かない場合はHuawei公式のヘルプなどを参考にするか端末のマニュアルを参考にしてください。</p>
-  </div>
-  <hr>
+    <p><a href="nozokimi://settings/huawei_system_manager">こちら</a>の設定から画面がオフになっても実行を許可するアプリにのぞきみを追加し、端末を再起動してみて下さい。
+    </p>
+    <p>上記のリンクが開かない場合は<a
+            href="https://consumer.huawei.com/jp/support/how-to/newbie-guide/ja-jp00698753/">Huawei公式のヘルプ</a>などを参考にするか端末のマニュアルを参考にしてください。
+    </p>
+</div>
+<hr>
 
-  <div class="content">
+<div class="content">
     <h3 id="delete_all_msg">メッセージを一括で削除したい</h3>
-    <p>トーク画面の画面上部のゴミ箱アイコンをタップし、表示されたダイアログで「メッセージを全て削除」を選ぶか、ユーザー一覧画面の削除したいユーザーを長押しし、表示されたダイアログで「削除する」を選んでください。</p>
-  </div>
+    <p>
+        トーク画面の画面上部のゴミ箱アイコンをタップし、表示されたダイアログで「メッセージを全て削除」を選ぶか、ユーザー一覧画面の削除したいユーザーを長押しし、表示されたダイアログで「削除する」を選んでください。</p>
+</div>
 
-  <hr>
+<hr>
 
-  <div class="content">
+<div class="content">
     <h3 id="delete_all_talk">トークを一括で既読・削除したい</h3>
     <p>ユーザー一覧画面の右下のフローティングボタンをタップし、表示されたダイアログから操作したい項目を選んでください。</p>
-  </div>
+</div>
 
-  <hr>
+<hr>
 
-  <div class="content">
+<div class="content">
     <h3 id="line_msg">LINEのメッセージが取得できない</h3>
     <p>本アプリは通知バーに表示される内容を取得しているため、LINEの通知が表示されない設定になっている場合はメッセージが取得できません。</p>
     <p>LINEの[HOME]→[その他]→[設定]→[通知設定]の順に移動し、「通知設定」・「メッセージ通知の内容表示」の2箇所を必ずONにしてください。</p>
     <p>また、特定のトークのみメッセージの取得ができない場合は、当該トークの通知がONになっているかを確認してください。</p>
-    <img class= "screenshot" src="image/img_settings_line_notification.png">
-  </div>
+    <img class="screenshot" src="image/img_settings_line_notification.png">
+</div>
 
-  <hr>
+<hr>
 
-  <div class="content">
+<div class="content">
     <h3 id="orca_msg">Facebook Messengerのメッセージが取得できない</h3>
     <p>本アプリは通知バーに表示される内容を取得しているため、Facebook Messengerの通知が表示されない設定になっている場合はメッセージが取得できません。</p>
     <p>Messengerの[HOME]→[アカウント設定]→[お知らせ＆サウンド]の順に移動し、「お知らせ＆サウンド」・「通知プレビュー」の2箇所を必ずONにしてください。</p>
-    <img class= "screenshot" src="image/img_settings_orca_notification.png">
-  </div>
+    <img class="screenshot" src="image/img_settings_orca_notification.png">
+</div>
 
-  <hr>
+<hr>
 
-  <div class="content">
+<div class="content">
     <h3 id="twitter_msg">Twitterのメッセージが取得できない</h3>
     <p>本アプリは通知バーに表示される内容を取得しているため、Twitterのダイレクトメッセージの通知が表示されない設定になっている場合はメッセージが取得できません。</p>
-    <p>Twitterの[HOME]→[ナビゲーションドロワー]→[設定]→[通知]→[モバイル通知]の順に移動し、「モバイル通知」・「ダイレクトメッセージ」の2箇所を必ずONにしてください。</p>
-    <img class= "screenshot" src="image/img_settings_twitter_notification.png">
-  </div>
+    <p>
+        Twitterの[HOME]→[ナビゲーションドロワー]→[設定]→[通知]→[モバイル通知]の順に移動し、「モバイル通知」・「ダイレクトメッセージ」の2箇所を必ずONにしてください。</p>
+    <img class="screenshot" src="image/img_settings_twitter_notification.png">
+</div>
 
-  <hr>
+<hr>
 
-  <div class="content">
-    <h3 id="can_not_do">このアプリでできないこと</h3>
-    <p>本アプリはメッセージアプリに対し直接アクセスすることができず、通知から内容を取得して動作しております。そのため、通知からの情報では取得できない下記の項目については対応できかねます。</p>
-    <ul class="list">
-      <li>インストール後設定するまでのメッセージの取得</li>
-      <li>通知が表示されなかった場合のメッセージの表示</li>
-      <li>通知の上で途切れてしまったメッセージの表示</li>
-      <li>自分の送信したメッセージの内容の表示</li>
-    </ul>
-    <p>申し訳ありませんがご了承ください。</p>
-  </div>
-
-  <hr>
-
-  <div class="content">
+<div class="content">
     <h3 id="contact">上記内容で解決しない場合</h3>
     <p>お手数ですが、<a href="nozokimi://mail/contact">こちら</a>まで不具合の詳しい状況をご連絡ください。</p>
     <p>※お送りの際はmasaibar.dev@gmail.comからのメール受信を許可する設定にしてください。</p>
     <p>基本的に3日以内くらいに返信出来るようしておりますが、返信を受け取ってもらえない方がいます。<br>
-      特にau, Docomo, SoftBank等携帯キャリアの方はよくMailerDeamonさんに阻まれるのでよろしくお願いします。</p>
-    </div>
-  </body>
-  </html>
+        特にau, Docomo, SoftBank等携帯キャリアの方はよくMailerDeamonさんに阻まれるのでよろしくお願いします。</p>
+</div>
+</body>
+</html>
