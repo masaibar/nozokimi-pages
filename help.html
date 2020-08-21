@@ -1,5 +1,6 @@
 <html>
 <head>
+    <meta charset='utf-8'>
     <link href="css/nozokimi.css" rel="stylesheet" type="text/css">
     <title>
         のぞきみ ヘルプ
@@ -11,6 +12,7 @@
     <ul>
         <li class="toc"><a href="#can_not_do">このアプリでできないこと</a></li>
         <li class="toc"><a href="#can_not_get">メッセージアプリの内容が取得できない</a></li>
+        <li class="toc"><a href="#can_not_get_only_from_certain_chat">LINEで特定の相手からのメッセージが受信されない</a></li>
         <li class="toc"><a href="#process_died_huawei_device">Huawei端末でうまく動かない</a></li>
         <li class="toc"><a href="#delete_all_msg">メッセージを一括で削除したい</a></li>
         <li class="toc"><a href="#delete_all_talk">トークを一括で既読・削除したい</a></li>
@@ -43,10 +45,10 @@
     <h3 id="can_not_get">メッセージアプリの内容が取得できない</h3>
     <p>通知へのアクセスがOFFになっている場合は、<a href="nozokimi://settings/notification_listener">こちら</a>から本アプリの通知へのアクセスをONにしてください。
     </p>
-    <p>ONになっているにも関わらず、取得できない場合はAndroid端末側のバグの可能性があります。下記の手順を順にお試しください。</p>
+    <p>ONになっているにも関わらず、取得できない場合はAndroid端末側の問題である可能性があります。下記の手順を順にお試しください。</p>
     <ul class="list">
-        <li>LINEの[設定]→[プライバシー管理]の順に移動し、[Letter Sealing]をOFFにする。</li>
-        <li>本アプリのアンインストールと再インストール</li>        
+        <li>LINEの[設定]→[プライバシー管理]の順に移動し、[<b>Letter Sealing</b>]を<b>OFF(チェックが外れた状態)</b>にする。</li>
+        <li>本アプリのアンインストールと再インストール</li>
         <li>通知へのアクセスをON → OFF → ONに</li>
         <li>Android端末本体の再起動</li>
     </ul>
@@ -56,6 +58,13 @@
         メーカーや端末によって環境が異なるため一概には言えませんが、メモリ管理やセキュリティ系(CleanMaster等)のアプリを入れている場合に強制的に停止されてしまう場合があります。</p>
     <p>もしそのようなアプリが入っている場合には、ホワイトリスト設定等を見直しの上端末を再起動してみてください。</p>
     <p>また最近人気のあるHuawei社製の端末をお使いの場合はひとつ下の項目もご確認下さい。</p>
+</div>
+
+<hr>
+<div class="content">
+    <h3 id="can_not_get_only_from_certain_chat">LINEで特定の相手からのメッセージが受信されない</h3>
+    <p>LINE特定の相手からのメッセージが受信できない場合は、LINEのトーク画面上で個別に通知がオフになっていることが多いです。</p>
+    <p>トーク画面右上のメニューから通知がオフになっていないか確認してみてください。</p>
 </div>
 
 <hr>
